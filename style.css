@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Recursive&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(/snakebg.jpg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+/*.body{
+    background: url("../snakebg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+#scoreBox{
+    position: absolute;
+    top: 59px;
+    right: 130px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+    color:#395B64;
+}
+
+#nameBox{
+    position: absolute;
+    top: 9px;
+    right: 80px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+    color: #395B64;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 109px;
+    right: 70px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+    color:#395B64;
+}
+
+#board{
+    background: linear-gradient(rgb(235, 233, 124), rgb(103, 246, 227));
+    width: 99vmin;
+    height: 99vmin;
+    border: 1px solid black; 
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(209, 79, 209), rgb(119, 24, 186)); 
+    border: 1px solid rgb(34, 4, 34); 
+    border-radius: 4px; 
+	transform: scale(1.01);
+    height: 5vmin;
+    text-align: center;
+    transform:rotate(45deg);
+	width: 5vmin;
+
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;  
+   
+}
+
+.food{
+    background-color: goldenrod;
+    border: .25vmin solid black;
+    border-radius: 2px;
+}
+
+.poison{
+    background: linear-gradient(rgb(214, 0, 0), rgb(255, 85, 33));
+    border: .25vmin solid black;
+    border-radius: 2px;
+}
+
+/* */
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body{
+    background-color: #0f72e5;
+}*/
+.popup{
+    background: #152d34;
+    width: 400px;
+    padding: 15px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 22px;
+    color:#8BBCCC;
+    display: none;
+    text-align: center;
+    
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #3a0303;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #749F82;
+    color: #749F82;
+    text-decoration: none;
+    padding: 5px 0;
+    text-align: center;
+}
